@@ -1,245 +1,366 @@
-<!DOCTYPE html><html lang="en"><head>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
     <title>suraj.me</title>
+</head>
 
-  <body>
+<body>
+    
     <div class="box">
-      <!-- navBar -->
+        <!-- Navigation Bar -->
+        <nav>
+            <li id="logo"><a href="#">suraj.me</a></li>
+            <div id="page_header_cont" class="page_header_cont">
+                <div id="page_header_wrap" class="page_header_wrap">
+                    <a class="top_back_link" href="" id="top_back_link" onclick="if (nav.go(this, event, {back: true}) === false) { showBackLink(); return false; }"></a>
+                    <header id="page_header" class="p_head1 p_head_l3">
+                        <div class="PortalNavigation">
+                            <div class="PortalNavigation__icon"></div>
+                        </div>
+                        <ul>
+                            <li class="media"><a href="#">Home</a></li>
+                            <li class="media"><a href="#edu">Education</a></li>
+                            <li class="media"><a href="#skills">Skills</a></li>
+                            <li class="media"><a href="#Intern">Intern</a></li>
+                            <li class="media"><a href="#project">Projects</a></li>
+                            <li class="media"><a href="#vision">About</a></li>
+                            <li class="media"><a href="#vision">Vision</a></li>
+                        </ul>
+                        <i class="fa-solid fa-bars" id="hum"></i>
+                        <br>
+                        <div class="container">
+                            <div class="row light-bulbs">
+                                <div class="light-bulb theme-color-one"></div>
+                                <div class="light-bulb theme-color-two"></div>
+                                <div class="light-bulb theme-color-three"></div>
+                                <div class="light-bulb theme-color-four"></div>
+                                <div class="light-bulb theme-color-five"></div>
+                            </div>
+                        </div>
+                            
+                   
+                    </header>
+               
+                </div>
+            </div>
+        </nav>
 
-      <nav>
-        <li id="logo"><a href="#">suraj.me</a></li>
-         <div id="page_header_cont" class="page_header_cont">
-    <div id="page_header_wrap" class="page_header_wrap">
-      <a class="top_back_link" href="" id="top_back_link" onclick="if (nav.go(this, event, {back: true}) === false) { showBackLink(); return false; }"></a>
-      
-      <header id="page_header" class="p_head1 p_head_l3">
-        <div class="PortalNavigation">
-    <div class="PortalNavigation__icon"></div>
-</div>
-<br>
-        <ul>
-          <li class="media"><a href="#">Home</a></li>
-          <li class="media"><a href="#skills">Skills</a></li>
-          <li class="media"><a href="#project">Projects</a></li>
-          <li class="media"><a href="#about">About</a></li>
-          <li class="media"><a href="#contact">Vision</a></li>
-        </ul>
-        <i class="fa-solid fa-bars" id="hum"></i>
-      </nav>
-
-      <!-- HeroSection -->
-
-      <div class="hero">
-        <div class="heroLeft" data-aos-duration="1300" data-aos="fade-up">
-                  <h1>Suraj Santosh Gujar</h1>
-          <h2>and I am a <span id="developer">Web Developer</span></h2>
-          <p>
-            Welcome to the dynamic world of web development! I'm Suraj Gujar, a recent graduate with a degree in Computer Science (2023) Engineering. My academic journey has equipped me with a robust foundation in a variety of web development technologies, including Core JAVA DSA MongoDB,SQL HTML, CSS, JavaScript, React.and Practice hands-on experience Coding Ninjas Platform.
-            <div></div>
-          <a id="projectLink" class="primaryButton" href="#project">See Projects</a>
-
+        <!-- Hero Section -->
+        <div class="hero">
+            <div class="heroLeft" data-aos-duration="1300" data-aos="fade-up">
+                <h1>Suraj Santosh Gujar</h1>
+                <h2>and I am a <span id="developer">Web Developer</span></h2>
+                <p>
+                    Aspiring Full Stack MERN Developer with a B.E. from Sant Gadge Baba Amravati University and a CGPA of 7.91. Seeking an entry-level role to apply and enhance my technical expertise in web development using the MERN stack. Eager to contribute to innovative projects while expanding my skills in a dynamic development environment.
+                </p>
+                <a id="projectLink" class="primaryButton" href="#project">See Projects</a>
+            </div>
+            <div data-aos-duration="1300" class="heroRight" data-aos="fade-down">
+                <img src="images/hero.png" alt="">
+                <a class="primaryButton" href="https://certificate.codingninjas.com/coding_recap/5853834a4462a4b4">Click Here Coding Recap</a>
+            </div>
         </div>
-        <div data-aos-duration="1300" class="heroRight" data-aos="fade-down">
-          <img src="images/hero.png" alt="">
-                      <a class="primaryButton" href="https://certificate.codingninjas.com/coding_recap/5853834a4462a4b4"> &nbsp &nbsp Click Here Coding_Recap</a>
+
+        <!-- Education Section -->
+        <h3 data-aos="slide-down" id="skills" class="heading">Education</h3>
+        
+        <section class="skills">
+            <div data-aos="flip-left" class="skillsSet">
+                <h4>Bachelor of Engineering in Computer Science</h4><br>
+                <p>Dr. Rajendra Gode Institute of Technology & Research, Amravati<br> July 2023 – Present<br> CGPA: 7.91</p>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <h3 data-aos="slide-down" id="skills" class="heading">Skills</h3>
+        <section class="skills">
+            <div data-aos="flip-right" class="skillsSet">
+                <h4>Programming Languages:</h4>
+                <div class="row skillsCards">
+                    <div class="col-md-2 skillCard">
+                        <img src="images/js.png" alt="JavaScript" class="img-fluid">
+                        <p>JavaScript</p>
+                    </div>
+                    <div class="col-md-2 skillCard">
+                        <img src="images/core java.png" alt="Java" class="img-fluid">
+                        <p>Java</p>
+                    </div>
+                </div>
+            </div>
+
+            <div data-aos="flip-right" class="skillsSet">
+                <h4>Frontend:</h4>
+                <div class="row skillsCards">
+                    <div class="col-md-2 skillCard">
+                        <img src="images/html.png" alt="HTML" class="img-fluid">
+                        <p>HTML</p>
+                    </div>
+                    <div class="col-md-2 skillCard">
+                        <img src="images/css.png" alt="CSS" class="img-fluid">
+                        <p>CSS</p>
+                    </div>
+                    <div class="col-md-2 skillCard">
+                        <img src="images/bootstrap.png" alt="Bootstrap" class="img-fluid">
+                        <p>Bootstrap</p>
+                    </div>
+                    <div class="col-md-2 skillCard">
+                        <img src="images/react.png" alt="React JS" class="img-fluid">
+                        <p>React JS</p>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="flip-right" class="skillsSet">
+              <h4>Frameworks:</h4>
+              <div class="row skillsCards">
+                  <div class="col-md-2 skillCard">
+                      <img src="images/react.png" alt="react" class="img-fluid">
+                      <p>React.js</p>
+                  </div>
+                  <div class="col-md-2 skillCard">
+                      <img src="images/nodejs.png" alt="nodejs" class="img-fluid">
+                      <p>Node.js</p>
+                  </div>
+                  <div class="col-md-2 skillCard">
+                      <img src="images/express.png" alt="express" class="img-fluid">
+                      <p>Express.js</p>
+                  </div>
+                  <div class="col-md-2 skillCard">
+                      <img src="images/redux.svg" alt="redux" class="img-fluid">
+                      <p>redux.js</p>
+                  </div>
+              </div>
+          </div>
+
+            <div data-aos="flip-right" class="skillsSet">
+              <h4>Data Bases:</h4>
+              <div class="row skillsCards">
+                  <div class="col-md-2 skillCard">
+                      <img src="images/mongo.png" alt="MongoDB" class="img-fluid">
+                      <p>MongoDB</p>
+                  </div>
+                  <div class="col-md-2 skillCard">
+                      <img src="images/sql.png" alt="MySQL" class="img-fluid">
+                      <p>MySQL</p>
+                  </div>
+                  <div class="col-md-2 skillCard">
+                      <img src="https://th.bing.com/th/id/R.264b4af3b14bfeca830e7bb11f17ba17?rik=7zm3fvF50TX5Ag&riu=http%3a%2f%2fassets.stickpng.com%2fthumbs%2f5847f40ecef1014c0b5e488a.png&ehk=j%2bb9PutFtWvPxJnx5zqadHcXS9D7xyzqdIUY9h5M%2fJY%3d&risl=&pid=ImgRaw&r=0" alt="Fire Base" class="img-fluid">
+                      <p>Fire Base</p>
+                 
+                  </div>
+              </div>
+          </div>
+        
+
+        <div data-aos="flip-right" class="skillsSet">
+          <h4>Web Technologies</h4>
+          <div class="row skillsCards">
+              <div class="col-md-2 skillCard">
+                  <img src="images/api.png" alt="api" class="img-fluid">
+                  <p>RESTful APIs</p>
+              </div>
+              <div class="col-md-2 skillCard">
+                  <img src="https://th.bing.com/th/id/OIP.Enuis004zNTe8ZG_ifeuuQHaHa?rs=1&pid=ImgDetMain" alt="JSON" class="img-fluid">
+                  <p>JSON</p>
+
+              </div>
           </div>
       </div>
+      <div data-aos="flip-right" class="skillsSet">
+        <h4>Tools:</h4>
+        <div class="row skillsCards">
+            <div class="col-md-2 skillCard">
+                <img src="images/Github.png" alt="github" class="img-fluid">
+                <p>Github</p>
+            </div>
+            <div class="col-md-2 skillCard">
+                <img src="images/post.png" alt="post" class="img-fluid">
+                <p>Postman</p>
+            </div>
+            <div class="col-md-2 skillCard">
+                <img src="images/mongo.png" alt="mongo" class="img-fluid">
+                <p>Mongo DB Compass</p>
+            </div>
+            <div class="col-md-2 skillCard">
+                <img src="https://theindianwire.com/wp-content/uploads/2018/06/Sublime_Text_3_logo-1.png" alt="Sublime" class="img-fluid">
+                <p>Sublime Text</p>
+            </div>
+            <div class="col-md-2 skillCard">
+                <img src="https://code.visualstudio.com/assets/images/code-stable.png" class="img-fluid">
+                <p>VS Code</p>
 
-      <!-- skillsSection -->
-      <h3 data-aos="slide-down" id="skills" class="heading">Skills</h3>
-
-      <div class="skills">
-        <div data-aos="flip-left" class="skillsSet">
-          <h4>Frontend:</h4>
-          <div class="skillsCards">
-            <div class="skillCard">
-              <img src="images/html.png" alt="">
-              <p>HTML</p>
+              </div>
+              
             </div>
-            <div class="skillCard">
-              <img src="images/css.png" alt="">
-              <p>CSS</p>
-            </div>
-
-            <div class="skillCard">
-              <img src="images/bootstrap.png" alt="">
-              <p>Botstrap</p>
-            </div>
-            <div class="skillCard">
-              <img src="images/js.png" alt="">
-              <p>Vanilla Javascript</p>
-            </div>
-            <div class="skillCard">
-              <img src="images/react.png" alt="">
-              <p>React JS</p>
-            </div>
-          </div>
         </div>
 
         <div data-aos="flip-right" class="skillsSet">
-          <h4>Backend:</h4>
-          <div class="skillsCards">
-            <div class="skillCard">
-              <img src="images/nodejs.png" alt="">
-              <p>Node JS</p>
-            </div>
-           
-            <div class="skillCard">
-              <img src="images/express.png" alt="">
-              <p>Express JS</p>
-            </div>
-            <div class="skillCard">
-              <img src="images/post.png" alt="">
-              <p>Postman</p>
-            </div>
-            <div class="skillCard">
-              <img src="images/core java.png" alt="">
-              <p> Intro Core JAVA</p>
-            </div>
-            <div class="skillCard">
-              <img src="images/DSA.png" alt="">
-              <p> Basic DSA</p>
-            </div>
+          <h4>Development Methodologies:</h4>
+          <div class="row skillsCards">
+              <div class="col-md-2 skillCard">
+                  <img src="https://png.pngtree.com/png-vector/20220725/ourmid/pngtree-agile-scheme-software-development-process-infographic-png-image_6066228.png" alt="Agile" class="img-fluid">
+                  <p>Agile</p>
+              </div>
+              <div class="col-md-2 skillCard">
+                  <img src="https://blog.wearedrew.co/hubfs/metodolog%C3%ADa%20scrum.png" alt="Scrum" class="img-fluid">
+                  <p>Scrum</p>
+              </div>
           </div>
-        </div>
-
-        <div data-aos="flip-up" class="skillsSet">
-          <h4>Database:</h4>
-          <div class="skillsCards">
-            <div class="skillCard">
-              <img src="images/mongo.png" alt="">
-              <p>Mongo DB</p>
-            </div>
-            <div class="skillCard">
-              <img src="images/sql.png" alt="">
-              <p>mySQL</p>
-            </div>
-          </div>
-        </div>
-
-        <div data-aos="flip-down" class="skillsSet">
-          <h4>Other skills:</h4>
-          <div class="skillsCards">
-            <div class="skillCard">
-              <img src="images/tailwind.png" alt="">
-              <p>Tailwind CSS</p>
-            </div>
-            <div class="skillCard">
-              <img src="images/Github.png" alt="">
-              <p>Github-Desktop </p>
-            </div>
-            <div class="skillCard">
-              <img src="images/MVC.png" alt="">
-              <p align="center">Model-View-Controller Architecture</p>
-            </div>
-
-              <div class="skillCard">
-              <img src="images/api.png" alt="">
-              <p>restAPI</p>
-            </div>
-            <div class="skillCard">
-              <img src="images/redux.svg" alt="">
-              <p>Redux Toolkit</p>
-            </div>
-              <div class="skillCard">
-              <img src="images/jq.png" alt="">
-              <p>JQuery</p>
-            </div>
-            <div class="skillCard">
-              <img src="images/aws.png" alt="">
-              <p>AWS</p>
-            </div>
-            <div class="skillCard">
-              <img src="images/web.png" alt="">
-              <p>Web pack</p>
-            </div><br><br><br><br><br>
-            <div class="skillCard">
-              <img src="images/red.png" alt="">
-              <p>Redis</p>
-            </div>
-            <div class="skillCard">
-              <img src="images/babel.png" alt="">
-              <p>Babel</p>
-            </div>
-          </div>
-
-        </div>
-         <div data-aos="flip-up" class="skillsSet">
-    
-          <div class="skillsCards">
-          
-    <div class="progress">
-  <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">TOTAL :  21+(plus) Skills progress%</div>
-</div>
-
-          
-          </div>
-        </div>
-        <div data-aos="flip-down" class="skillsSet">
-          <h4>Currently Learning Certifcate...</h4>
-          <div id="newStack">
-            
-          <div class="button-container">
-  <a class="primaryButton" href="https://certificate.codingninjas.com/view/c482a4359ece4315">Core java (Introduction Basic Rules)</a>
-  <a class="primaryButton" href="https://certificate.codingninjas.com/view/022290050389862c">Data Structure in Java</a>
-  <a class="primaryButton" href="https://certificate.codingninjas.com/view/c482a4359ece4315">React | Full Stack Development</a>
-  <a class="primaryButton" href="https://certificate.codingninjas.com/view/c079dd054b56294e">Front End | Full Stack Development</a>
-  <a class="primaryButton" href="https://certificate.codingninjas.com/view/022290050389862c"><br><br>Back End with Node.js | Full Stack Development<br><br></a>
-</div>
-
-
-            
-            
-     
-            
-       </div>
-       </div>
       </div>
+      
+      <div data-aos="flip-right" class="skillsSet">
+          <h4>Operating Systems:</h4>
+          <div class="row skillsCards">
+              <div class="col-md-2 skillCard">
+                  <img src="https://th.bing.com/th/id/R.40698a52043f87a5b3db65952cf9b55b?rik=bwW3wVPqAscThw&riu=http%3a%2f%2fpluspng.com%2fimg-png%2fmicrosoft-windows-logo-png-windows-logo-4900.png&ehk=mbfJJK%2fvYe0O6IBbAIFCObDJeaI8f8QFlsR7s6W1zSc%3d&risl=&pid=ImgRaw&r=0" alt="Windows" class="img-fluid">
+                  <p>Windows</p>
+              </div>
+          </div>
+      </div>
+      <div data-aos="flip-down" class="skillsSet">
+        <h4>Other skills:</h4>
+        <div class="skillsCards">
+          <div class="skillCard">
+            <img src="images/tailwind.png" alt="">
+            <p>Tailwind CSS</p>
+          </div>
+          <div class="skillCard">
+            <img src="images/react.png" alt="">
+            <p>React_Native </p>
+          </div>
+          <div class="skillCard">
+            <img src="images/MVC.png" alt="">
+            <p align="center">Model-View-Controller Architecture</p>
+          </div>
+
+            <div class="skillCard">
+            <img src="images/api.png" alt="">
+            <p>restAPI</p>
+          </div>
+          <div class="skillCard">
+            <img src="images/redux.svg" alt="">
+            <p>Redux Toolkit</p>
+          </div>
+            <div class="skillCard">
+            <img src="images/jq.png" alt="">
+            <p>JQuery</p>
+          </div>
+          <div class="skillCard">
+            <img src="images/aws.png" alt="">
+            <p>AWS</p>
+          </div>
+          <div class="skillCard">
+            <img src="images/web.png" alt="">
+            <p>Web pack</p>
+          </div><br><br><br><br><br>
+          <div class="skillCard">
+            <img src="images/red.png" alt="">
+            <p>Redis</p>
+          </div>
+          <div class="skillCard">
+            <img src="images/babel.png" alt="">
+            <p>Babel</p>
+          </div>
+        </div>
+
+      </div>
+      
+   
+
+            <div data-aos="flip-up" class="skillsSet">
+                <div class="skillsCards">
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                            TOTAL: 21+ Skills
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+      </div>
+        <!-- Java Development Intern -->
+        <h3 data-aos="slide-down"  id="Intern"class="heading">Java Development Intern:</h3>
+        <section class="skills">
+            <div data-aos="flip-left" class="skillsSet">
+              <h4>Java Development Intern:</h4>
+              Company: Innovation Private Limited, Amravati, Maharashtra Duration: February 2022 – May 2022
+              Responsibilities: Developed web applications using Java and Spring Boot, participated in team meetings and code reviews, and implemented features while fixing bugs in existing applications.
+          </div>
+        </section>
+
+        <section class="skills">
+       
+      </div>
+        <div data-aos="flip-down" class="skillsSet">
+            <h4>Currently Learning Certificates:</h4>
+            <div class="button-container">
+                <a class="primaryButton" href="https://certificate.codingninjas.com/view/c482a4359ece4315">Core Java (Introduction Basic Rules)</a>
+                <a class="primaryButton" href="https://certificate.codingninjas.com/view/022290050389862c">Data Structure in Java</a>
+                <a class="primaryButton" href="https://certificate.codingninjas.com/view/c482a4359ece4315">React | Full Stack Development</a>
+                <a class="primaryButton" href="https://certificate.codingninjas.com/view/c079dd054b56294e">Front End | Full Stack Development</a>
+                <a class="primaryButton" href="https://certificate.codingninjas.com/view/022290050389862c">Back End with Node.js | Full Stack Development</a>
+                <a class="primaryButton" href="https://certificate.codingninjas.com/view/022290050389862c">Introduction to Generative AI</a>
+            </div>
+        </div>
+      </section>
 
       <!-- projectSection -->
       <h3 data-aos="slide-up" id="project" class="heading">Projects</h3>
 
-      <div class="projectSection">
-         <a target="_blank" href="https://surajgujar48.github.io/Atteendance-Book/" data-aos="zoom-in" class="projectCard" onmouseover="handleHover()">
-          <img src="images/Book.png" alt="">
+<div class="projectSection">
+    <div></div>
+    <a data-aos="zoom-in-down" href="https://surajgujar48.github.io/Suraj-Music-Player/" target="_blank" class="projectCard">
+        <img src="images/Music-Player.png" alt="Music Player">
+        <h4>Suraj-Music-Player</h4>
+        <h4 style="color:#61DBFB;"><strong><em>Tech Stack: HTML, CSS</em></strong></h4>
+        <p style="text-align: justify;">Built a user-friendly music player that allows users to upload, play, and manage their favourite songs with a minimalistic design.</p>
+    </a>
 
-            <h4>Attendance Book</h4>
-        </a>
-        <a data-aos="zoom-in-down" href="https://surajgujar48.github.io/ImageEditor/" target="_blank" class="projectCard">
-          <img src="images/ImageEdit.png" alt="">
-          <h4>Image Editor</h4>
-        </a>
-        <a data-aos="zoom-in-down" href="https://surajgujar48.github.io/Suraj-Music-Player/" target="_blank" class="projectCard">
-          <img src="images/Music-Player.png" alt="">
-          <h4>Suraj-Music-Player</h4>
-        </a>
-        
+    <a target="_blank" href="https://surajgujar48.github.io/Atteendance-Book/" data-aos="zoom-in" class="projectCard">
+        <img src="images/Book.png" alt="Attendance Book">
+        <h4>Attendance Book</h4>
+        <h4 style="color:#61DBFB;"><strong><em>Tech Stack: HTML, CSS, JavaScript</em></strong></h4>
+        <p style="text-align: justify;">The Attendance-Book project allows users to mark and track attendance easily on a responsive web interface.</p>
+    </a>
 
-        <a data-aos="zoom-in-up" href="https://www.youtube.com/watch?v=RelywEt0AYM" target="_blank" class="projectCard">
-  <img src="video/chat.MP4" alt="">
-  <h5 style="text-align: center;">Video Link</h5>
-  <h4 style="text-align: center;">
-    IMDB_clone surajgujar48
-  </h4>
-  <h5 style="text-align: center;">Skill Test 1()</h5>
-  
-</a>
+    <a data-aos="zoom-in-down" href="#" target="_blank" class="projectCard">
+        <img src="images/Wedding-Photography.png" alt="Wedding Photography">
+        <h4>Wedding Photography</h4>
+        <h4 style="color:#61DBFB;"><strong><em>Tech Stack: HTML, CSS, JavaScript</em></strong></h4>
+        <p style="text-align: justify;">A wedding photography website built using HTML and CSS, with JavaScript and Bootstrap for mobile-friendly views, helping users browse wedding photos easily.</p>
+    </a>
 
-        <a data-aos="zoom-in-up" href="https://www.youtube.com/watch?v=OoODEpVbfm8" target="_blank" class="projectCard">
-          <img src="video/chat.MP4" alt="">
+    <a data-aos="zoom-in-down" href="#" target="_blank" class="projectCard">
+        <img src="images/IMDB.png" alt="IMDB Clone">
+        <h4>IMDB Clone</h4>
+        <h4 style="color:#61DBFB;"><strong><em>Tech Stack: React, Node.js</em></strong></h4>
+        <p style="text-align: justify;">Designed and built a web application to manage movies, allowing users to browse, search, and filter information about films.</p>
+    </a>
 
-              <h5>Video Link</center></h5>
-          <h4><center> 📋To-do List</center></h4>
-          <h5><center>Skill Test 1()</center></h5>
-        </a> 
-      </div>
+    <a data-aos="zoom-in-down" href="#" target="_blank" class="projectCard">
+        <img src="images/Health-Management.png" alt="Health Management System">
+        <h4>Health Management System</h4>
+        <h4 style="color:#61DBFB;"><strong><em>Tech Stack: React, Node.js, MongoDB</em></strong></h4>
+        <p style="text-align: justify;">A web application designed to manage patient data and health records, with features for user registration, appointment scheduling, and medical history tracking.</p>
+    </a>
+
+    <a data-aos="zoom-in-down" href="#" target="_blank" class="projectCard">
+        <img src="images/E-Commerce.png" alt="E-Commerce Website">
+        <h4>E-Commerce Website</h4>
+        <h4 style="color:#61DBFB;"><strong><em>Tech Stack: JSX, CSS, Bootstrap, React, Node.js, MongoDB</em></strong></h4>
+        <p style="text-align: justify;">Created a fully functional e-commerce website featuring product listings, user authentication, shopping cart, and payment gateway integration.</p>
+    </a>
+</div>
+
 
       <!-- aboutSection -->
-      <h3 data-aos="slide-down" id="about" class="heading">About</h3>
+      <h3 data-aos="slide-down" id="vision" class="heading">About</h3>
       <div class="aboutSection">
         <div data-aos="zoom-out-up" class="left">
           <img id="pp" src="images/profile.png" alt="">
@@ -253,7 +374,7 @@
 </div>
 
       </span>
-          <h4>Current Address:Padmavati PG Kalyani Nagar Pune. </h4>
+          <h4>Hinge Home Colony, Karve Nagar, Pune 411052 </h4>
 
         
 
@@ -281,6 +402,8 @@
         </div>
 
         </div>
+        
+        
       
       <footer>
         <br>
@@ -356,6 +479,7 @@
           duration: 700,
         });
       }
+      
     </script>
   
 
